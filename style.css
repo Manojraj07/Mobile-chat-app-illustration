@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-size: 1.6rem;
+  background-color: rgb(89, 136, 238);
+}
+
+.mobile-container {
+  width: 37rem;
+  display: grid;
+  margin: 4rem auto;
+  /* margin-left: 54rem; */
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  background-color: rgb(181, 200, 236);
+  border: 1.4rem solid #fff;
+  border-radius: 4rem;
+  overflow: hidden;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.left-arrow,
+.dots {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+.img {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  border: 0.15rem solid #fff;
+}
+
+.top-section {
+  display: flex;
+  gap: 1.2rem;
+  padding-top: 1.3rem;
+  padding-bottom: 1.3rem;
+  color: #fff;
+  letter-spacing: 0.06rem;
+}
+
+.top {
+  background: linear-gradient(
+    to left,
+    hsl(293, 100%, 63%),
+    hsl(264, 100%, 61%)
+  );
+  display: flex;
+  flex-direction: column;
+  border: 0rem solid;
+  border-radius: 0 0 1rem 1rem;
+}
+
+.name {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.status {
+  font-size: 1rem;
+  opacity: 0.6;
+}
+
+.top-btn {
+  width: 60%;
+  height: 2.5rem;
+  border: none;
+  border-radius: 0 0 2rem 2rem;
+  align-self: center;
+  background: #fff;
+}
+.left-arrow {
+  align-self: center;
+  margin-left: 2rem;
+}
+.dots {
+  margin-left: auto;
+  align-self: center;
+  margin-right: 1.5rem;
+}
+
+.img {
+  align-self: center;
+  transition: all 0.3s;
+}
+
+.img:hover {
+  border: none;
+  transform: scale(3);
+}
+
+.left {
+  max-width: 60%;
+  background-color: rgb(236, 220, 243);
+  justify-self: flex-start;
+  padding: 1rem;
+  margin-left: 1rem;
+  border: 0rem solid;
+  border-radius: 1.5rem 1.5rem 1.5rem 0.4rem;
+  color: hsl(276, 55%, 52%);
+  font-weight: 400;
+}
+
+.right {
+  max-width: 60%;
+  background-color: #fff;
+  justify-self: flex-end;
+  padding: 1rem;
+  margin-right: 1rem;
+  border: 0rem solid;
+  border-radius: 1.5rem 1.5rem 0.4rem 1.5rem;
+  color: hsl(271, 15%, 43%);
+  font-weight: 400;
+}
+
+.msg-left1 {
+  margin-top: 0.5rem;
+}
+.msg-left2,
+.msg-right2 {
+  margin-bottom: 1rem;
+}
+.dog-img {
+  width: 18%;
+  border-radius: 1.5rem;
+  transition: all 0.3s;
+}
+
+.dog-images {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+  margin-right: 1rem;
+}
+
+.dog-img:hover {
+  transform: scale(1.2);
+}
+aside {
+  width: 95%;
+  justify-self: center;
+  margin: 1rem 1.2rem;
+  margin-bottom: 1.2rem;
+  position: relative;
+}
+
+.text-box {
+  width: 100%;
+  height: 5rem;
+  border-radius: 4rem;
+  border: none;
+  background: #fff;
+  padding-left: 2rem;
+  color: hsl(206, 6%, 79%);
+  opacity: 0.6;
+}
+aside button {
+  width: 4.2rem;
+  height: 4.2rem;
+  border-radius: 50%;
+  position: absolute;
+  right: 2%;
+  top: 50%;
+  transform: translate(2%, -50%);
+  border: none;
+  background: hsl(271, 36%, 24%);
+  color: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+}
+
+aside button:hover {
+  background: green;
+}
+
+.right-arrow {
+  width: 24px;
+  height: 24px;
+}
+
+.pack {
+  width: 70%;
+  background: linear-gradient(
+    to right,
+    hsl(293, 100%, 63%),
+    hsl(264, 100%, 61%)
+  );
+  margin-left: 1rem;
+  justify-self: flex-start;
+  padding: 1rem;
+  border-radius: 1.5rem 1.5rem 1.5rem 0.4rem;
+  display: flex;
+  gap: 1rem;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+.pack:hover {
+  transform: translateY(-0.3rem);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.075);
+}
+
+.radio-btn {
+  align-self: center;
+}
+
+.pack label {
+  width: 100%;
+  display: flex;
+  align-self: center;
+}
+
+.price {
+  margin-left: auto;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-right: 2rem;
+}
+
+.plan-name {
+  align-self: center;
+  padding-top: 0.2rem;
+}
+
+.radio-btn {
+  appearance: none;
+  border: 0.2rem solid hsl(289, 100%, 72%);
+  width: 2.2rem;
+  height: 2rem;
+  border-radius: 50%;
+  transition: all 1s;
+}
+
+.radio-btn:checked {
+  background: radial-gradient(hsl(271, 36%, 24%) 40%, #fff 60%);
+  border: 0.2rem solid hsl(271, 36%, 24%);
+}

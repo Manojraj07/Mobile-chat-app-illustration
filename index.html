@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | [Challenge Name Here]</title>
+  </head>
+  <body>
+    <section class="mobile-container">
+      <div class="top">
+        <button class="top-btn"></button>
+        <section class="top-section">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="left-arrow"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M15 19l-7-7 7-7"
+            />
+          </svg>
+          <img class="img" src="images/avatar.jpg" alt="Photo of Samuel" />
+          <div class="name-status">
+            <div class="name">Samuel Green</div>
+            <div class="status">Available to Walk</div>
+          </div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="dots"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
+            />
+          </svg>
+        </section>
+      </div>
+      <div class="msg-left1 left">
+        That sounds great. I’d be happy with that.
+      </div>
+      <div class="msg-left2 left">
+        Could you send over some pictures of your dog, please?
+      </div>
+      <div class="dog-images">
+        <img
+          class="dog-img"
+          src="images/dog-image-1.jpg"
+          alt="Image of a dog"
+        />
+        <img
+          class="dog-img"
+          src="images/dog-image-2.jpg"
+          alt="Image of a dog"
+        />
+        <img
+          class="dog-img"
+          src="images/dog-image-3.jpg"
+          alt="Image of a dog"
+        />
+      </div>
+      <div class="msg-right1 right">
+        Here are a few pictures. She’s a happy girl!
+      </div>
+      <div class="msg-right2 right">Can you make it?</div>
+      <div class="msg-left3 left">
+        She looks so happy! The time we discussed works. How long shall I take
+        her out for?
+      </div>
+
+      <div class="pack">
+        <input
+          type="radio"
+          id="30min"
+          name="package"
+          value="30min-$29"
+          class="radio-btn"
+        />
+        <label for="30min"
+          ><span class="plan-name">30 minute walk</span
+          ><span class="price">$29</span></label
+        >
+      </div>
+      <div class="pack">
+        <input
+          type="radio"
+          id="1hour"
+          name="package"
+          value="1hour-$49"
+          class="radio-btn"
+        />
+        <label for="1hour"
+          ><span class="plan-name">1 hour walk</span
+          ><span class="price">$49</span></label
+        >
+      </div>
+
+      <aside class="bottom-box">
+        <input class="text-box" type="text" placeholder="Type a message…" />
+        <button>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="right-arrow"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 5l7 7-7 7"
+            />
+          </svg>
+        </button>
+      </aside>
+    </section>
+    <div class="left-background"></div>
+  </body>
+</html>
